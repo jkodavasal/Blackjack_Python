@@ -56,7 +56,7 @@ If neither has a blackjack (a total of 21 on the first two cards itself as in St
 
 ## Step 4: Dealer's turn (2 possible outcomes)
 
-The dealer has no flexibility in how he plays. After the player has finished playing (i.e. reaches 21 or stands -- note to get to this point, neither the dealer nor player had a blackjack in Step 2, and the player did not "bust" in Step 3), then the dealer keeps "hitting" (implemented as a loop) or getting more cards from the deck, until:
+The dealer has no flexibility in how he plays. First he flips his face down card to show it to the player. Then the dealer keeps "hitting" (implemented as a loop) or getting more cards from the deck, until:
 1. the dealer "busts"; say for eg. if he has a total hand value of 14 (without an Ace in this example -- see note on Aces at the top), and then proceeds to pick a 9 for example, his total would now be 24, which is > 21, so dealer busts, and player wins. --> **Player wins, and gets his bet money back plus an amount equal to the bet from the dealer. Game ends**
 2. dealer ends up with a hand value of anywhere between 17 and 21. Then dealer is obligated to "stand" -- this is a Casino rule. --> Proceed to Step 5. *__Game continues__*
 
