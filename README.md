@@ -22,7 +22,7 @@ To understand it better, download a Blackjack app on your phone and play for som
 - Initialize dealer (as an object of class Player). Note the name and bankroll for the dealer are unused, since we assume the dealer is the computer, and the bankroll is infinte.
 - Initialize a deck of cards (as an object mydeck, which contains a list, mydeck.deck, which is a list of tuples, the first element of the tuple being the Name or Number on the card (say A, Q, 10, 2, etc.), and the second element being the suit (which is a symbol representing clubs, spades, etc.)
 
-Go through Steps 1 through 5 (each iteration of Step 1 through 5 represents a single game) until player decides to quit, or he runs out of money from his bank roll
+## Go through Steps 1 through 5 (each iteration of Step 1 through 5 represents a single game) until player decides to quit, or he runs out of money from his bank roll
 
 - If the deck has less than or equal to 10 cards left, reinitialize a new deck, otherwise continue with the same deck
 - Note "hitting" means dealing a card from the deck and adding it to the player's or dealer's hand as the case may be
