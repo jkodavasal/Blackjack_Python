@@ -42,29 +42,29 @@ This is implemented in the game in the same order as above, however, it only dis
 ## Step 2: Check for Blackjacks
 
 Check if either dealer or player has a blackjack (a total of 21 on the first two cards itself).
-- (a) Player has blackjack, dealer doesn't --> Player wins the game and gets his bet amount back plus 1.5x his bet amount from the dealer. Game ends.
-- (b) Player has blackjack and dealer also has blackjack --> Draw (or Push), and player gets back his bet amount only. Game ends.
-- (c) Dealer has blackjack, but player doesn't --> Dealer wins, and player loses his bet. Game ends.
-- (d) If neither has blackjack, go to Step 3. Game continues
+1. Player has blackjack, dealer doesn't --> Player wins the game and gets his bet amount back plus 1.5x his bet amount from the dealer. Game ends.
+2. Player has blackjack and dealer also has blackjack --> Draw (or Push), and player gets back his bet amount only. Game ends.
+3. Dealer has blackjack, but player doesn't --> Dealer wins, and player loses his bet. Game ends.
+4. If neither has blackjack, go to Step 3. Game continues
 
 ## Step 3: Player's turn
 
 If neither has a blackjack (a total of 21 on the first two cards itself as in Step 1), then player can proceed to "hit" i.e. get new cards from the deck until (note this will be a loop until (a), (b), or (c) is satisfied): 
-- (a) his total exceeds 21 (busts, i.e. loses his bet) --> Dealer wins, and player loses his bet. Game ends.
-- (b) he gets exactly 21 --> Player automatically "stands" or ends his turn and proceed to Step 4 for dealer's turn. Game continues
-- (c) he decides to "stand".  --> Proceed to Step 4 for dealer's turn. Game continues
+1. his total exceeds 21 (busts, i.e. loses his bet) --> Dealer wins, and player loses his bet. Game ends.
+2. he gets exactly 21 --> Player automatically "stands" or ends his turn and proceed to Step 4 for dealer's turn. Game continues
+3. he decides to "stand".  --> Proceed to Step 4 for dealer's turn. Game continues
 
 ## Step 4: Dealer's turn
 
 The dealer has no flexibility in how he plays. After the player has finished playing (i.e. reaches 21 or stands -- note to get to this point, neither the dealer nor player had a blackjack in Step 2, and the player did not "bust" in Step 3), then the dealer keeps "hitting" (implemented as a loop) or getting more cards from the deck, until:
-(a) the dealer "busts"; say for eg. if he has a total hand value of 14 (without an Ace in this example -- see note on Aces at the top), and then proceeds to pick a 9 for example, his total would now be 24, which is > 21, so dealer busts, and player wins. --> Player wins, and gets his bet money back plus an amount equal to the bet from the dealer. Game ends. 
-(b) dealer ends up with a hand value of anywhere between 17 and 21. Then dealer is obligated to "stand" -- this is a Casino rule. --> Proceed to Step 5. Game continues
+1. the dealer "busts"; say for eg. if he has a total hand value of 14 (without an Ace in this example -- see note on Aces at the top), and then proceeds to pick a 9 for example, his total would now be 24, which is > 21, so dealer busts, and player wins. --> Player wins, and gets his bet money back plus an amount equal to the bet from the dealer. Game ends. 
+2. dealer ends up with a hand value of anywhere between 17 and 21. Then dealer is obligated to "stand" -- this is a Casino rule. --> Proceed to Step 5. Game continues
 
 ## Step 5: Pick a winner (assuming neither player nor dealer has busted or has a hand value >21, and neither has got a blackjack)
 
-(a) If player's hand's value > dealer's hand's value --> Player wins, and gets his bet money back plus an amount equal to the bet from the dealer. Game ends. 
-(b) If dealer's hand's value > player's hand value --> Dealer wins, player loses his bet money. Game ends
-(c) Both have same hand value --> Draw (or Push), and player gets his bet money back.
+1. If player's hand's value > dealer's hand's value --> Player wins, and gets his bet money back plus an amount equal to the bet from the dealer. Game ends. 
+2. If dealer's hand's value > player's hand value --> Dealer wins, player loses his bet money. Game ends
+3. Both have same hand value --> Draw (or Push), and player gets his bet money back.
 
 ### Note: 
 Everytime a player bets, his bankroll is reduced by the amount of the bet. If he wins, he gets his bet money back (to his bankroll), plus winnings (1.5x of bet for Blackjack, and 1.0x of bet otherwise)
