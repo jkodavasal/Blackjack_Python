@@ -31,12 +31,11 @@ Go through Steps 1 through 5 (each iteration of Step 1 through 5 represents a si
 
 ## Step 1: Deal the first two cards for player and dealer:
 
-<ol>
+
 1. Player receives a card face up (picked randomly from the deck)
 2. Dealer receives a card face down (picked randomly from the deck)
 3. Player receives second card face up (picked randomly from the deck)
 4. Dealer receives second card face down, and flips his first card to face up (picked randomly from the deck)
-</ol>
 
 This is implemented in the game in the same order as above, however, it only displays the final outcome, i.e., two face up cards for the player, and one face down (second card) and one face up card (first card) for the dealer.
 
