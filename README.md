@@ -14,7 +14,7 @@ The program is fairly simple. I have used Object Oriented Programming. In this v
 
 For an overview of Blackjack, read https://blog.udemy.com/blackjack-rules-2/
 
-To understand it better, download a Blackjack app on your phone and play for sometime: I used Blackjack21: Blackjackist from #1 Blackjack, available on the Iphone App store. Note that this game allows multiple players, insurance, and double downs, which are not implemented in my simple version of the game. Just ignore the other players (as their cards or bets don't affect your outcome -- at least for these purposes) and insurance/double down options for now.
+To understand it better, download a Blackjack app on your phone and play for sometime: I used *__Blackjack21: Blackjackist from #1 Blackjack__*, available on the Iphone App store. Note that this game allows multiple players, insurance, and double downs, which are not implemented in my simple version of the game. Just ignore the other players (as their cards or bets don't affect your outcome -- at least for these purposes) and insurance/double down options for now.
 
 # Logic
 
