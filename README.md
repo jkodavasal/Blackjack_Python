@@ -51,7 +51,7 @@ Check if either dealer or player has a blackjack (a total of 21 on the first two
 
 If neither has a blackjack (a total of 21 on the first two cards itself as in Step 1), then player can proceed to "hit" i.e. get new cards from the deck until (note this will be a loop until (a), (b), or (c) is satisfied): 
 1. his total exceeds 21 (busts, i.e. loses his bet) --> **Dealer wins, and player loses his bet. Game ends**
-2. he gets exactly 21 --> Player automatically "stands" or ends his turn and proceed to Step 4 for dealer's turn. **Game continues**
+2. he gets exactly 21 --> Player automatically "stands" or ends his turn and proceed to Step 4 for dealer's turn. *__Game continues__*
 3. he decides to "stand".  --> Proceed to Step 4 for dealer's turn. *__Game continues__*
 
 ## Step 4: Dealer's turn (2 possible outcomes)
@@ -64,7 +64,7 @@ The dealer has no flexibility in how he plays. After the player has finished pla
 
 1. If player's hand's value > dealer's hand's value --> **Player wins, and gets his bet money back plus an amount equal to the bet from the dealer. Game ends**
 2. If dealer's hand's value > player's hand value --> **Dealer wins, player loses his bet money. Game ends**
-3. Both have same hand value --> **Draw (or Push), and player gets his bet money back**
+3. Both have same hand value --> **Draw (or Push), and player gets his bet money back. Game ends**
 
 ### Note: 
 Everytime a player bets, his bankroll is reduced by the amount of the bet. If he wins, he gets his bet money back (to his bankroll), plus winnings (1.5x of bet for Blackjack, and 1.0x of bet otherwise)
